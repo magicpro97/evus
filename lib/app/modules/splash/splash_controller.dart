@@ -24,7 +24,7 @@ class SplashController extends GetxController with LoadingController {
     if (_userRepository.isLogin()) {
       Get.offNamed(Routes.HOME);
     } else {
-      Get.offNamed(Routes.LOGIN);
+      Get.offNamed(Routes.WELCOME);
     }
   }
 }
