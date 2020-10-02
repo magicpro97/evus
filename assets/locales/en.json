@@ -1,0 +1,11 @@
+{
+  "app_name": "Evus",
+  "screen": {
+    "splash": "Splash Screen",
+    "home": "Home Screen"
+  },
+  "txt": {
+    "email": "Email",
+    "password": "Password"
+  }
+}
