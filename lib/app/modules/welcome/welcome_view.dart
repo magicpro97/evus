@@ -1,5 +1,6 @@
 import 'package:evus/app/modules/welcome/welcome_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:get/get.dart';
 import 'package:sign_button/create_button.dart';
 import 'package:sign_button/sign_button.dart';
@@ -25,7 +26,11 @@ class WelcomeView extends GetView<WelcomeController> {
               child: Text('Create a new event'),
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () async {
+                String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+                    "#ff6666", "Cancel", false, ScanMode.DEFAULT);
+                printInfo(info: barcodeScanRes);
+              },
               child: Text('Scan invitation code'),
             ),
             Text(

@@ -45,5 +45,7 @@
     <array>
     	<string>en</string>
     </array>
+    <key>NSCameraUsageDescription</key>
+    <string>Camera permission is required for QR Code scanning.</string>
 </dict>
 </plist>
